@@ -32,15 +32,21 @@ const App = () => {
       );
       console.log("User created:", response.data);
     } catch (error) {
-      console.error("There was an error creating the user!", error);
+      console.error("There was an error creating the user!".error);
     }
   };
 
   return (
     <div className="container">
-      <form onSubmit={handleSubmit}>
-        <GeneralInfoForm formData={formData} setFormData={setFormData} />
-        <ContactDetailsForm formData={formData} setFormData={setFormData} />
+      <form onSubmit={handleSubmit} className="formi">
+        <div className="g">
+          <div className="j">
+            <GeneralInfoForm formData={formData} setFormData={setFormData} />
+          </div>
+          <div className="h">
+            <ContactDetailsForm formData={formData} setFormData={setFormData} />
+          </div>
+        </div>
         <div className="submit-section">
           <input type="checkbox" name="terms" /> I do accept the Terms and
           Conditions of your site.

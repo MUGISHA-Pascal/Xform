@@ -12,7 +12,7 @@ form {
   display: flex;
   flex-direction: row;
   background-color: white;
-  padding: 20px;
+  padding: 0px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -42,7 +42,7 @@ form {
 
 .submit-section button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: rgb(20, 20, 103);
   color: white;
   border: none;
   border-radius: 5px;
@@ -70,4 +70,31 @@ form {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+.g {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.formi {
+  display: flex;
+  flex-direction: column;
+}
+.j {
+  width: 50%;
+  padding: 10px;
+}
+.h {
+  background-color: rgb(20, 20, 103);
+  padding-right: 10px;
+  color: white;
+  width: 50%;
+}
+.h input {
+  background-color: rgb(20, 20, 103);
+  border: none;
+  color: white;
+}
+.h input:focus {
+  outline: none;
 }
